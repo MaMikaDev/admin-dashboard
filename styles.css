@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Martian Mono", monospace;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  gap: 0.1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "sidebar top-nav top-nav top-nav top-nav"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main";
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container > div {
+  border-radius: 0.5em;
+  padding: 1%;
+}
+
+.sidebar {
+  background-color: #05386b;
+  grid-area: sidebar;
+}
+
+.top-nav {
+  background-color: #379683;
+  grid-area: top-nav;
+}
+
+.main {
+  background-color: #5cdb95;
+  grid-area: main;
+}
+
+.element {
+  border-radius: 0.5em;
+  padding: 1%;
+}
