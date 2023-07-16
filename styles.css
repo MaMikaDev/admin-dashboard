@@ -33,11 +33,28 @@
 .sidebar {
   background-color: #05386b;
   grid-area: sidebar;
+  color: white;
 }
 
+.sidebar > div {
+  padding: 0.3em;
+}
 .top-nav {
   background-color: #379683;
   grid-area: top-nav;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.top-nav input[type="text"] {
+  padding: 0.3em;
+  border-radius: 0.7em;
+  font-size: medium;
+  width: min(80%);
+}
+
+.top-nav.search-bar {
+  background-color: white;
 }
 
 .main {
@@ -94,7 +111,7 @@
   grid-row: 8 / 11;
 }
 
-.trending {
+.annoucements {
   grid-column: 5 / 6;
   grid-row: 1 / 1;
 }
@@ -104,7 +121,7 @@
   grid-row: 2 / 6;
 }
 
-.annoucements {
+.trending {
   grid-column: 5 / 7;
   grid-row: 6 / 7;
 }
