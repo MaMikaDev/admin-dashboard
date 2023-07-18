@@ -57,6 +57,23 @@
   grid-template-columns: 3fr 2fr;
 }
 
+.logged-in p,
+.three-buttons p {
+  margin-left: 15rem;
+}
+
+.button {
+  border-radius: 2em;
+  padding: 0.6em;
+  font: 2em;
+  background-color: #05386b;
+  color: white;
+}
+
+.top-nav > div {
+  padding: 2%;
+}
+
 .top-nav input[type="text"] {
   padding: 0.3em;
   border-radius: 0.7em;
