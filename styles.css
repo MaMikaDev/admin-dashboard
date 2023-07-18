@@ -25,7 +25,8 @@
   overflow: hidden;
 }
 
-.container > div {
+.container p {
+  padding: 0.3em;
   border-radius: 0.5em;
   padding: 1%;
 }
@@ -38,6 +39,16 @@
 
 .sidebar > div {
   padding: 0.3em;
+}
+
+[class^="icon"] {
+  width: 1.8em;
+  height: 1.8em;
+  position: relative;
+  top: 0.39em;
+  color: white;
+  -webkit-filter: invert(100%);
+  #changes the colour of icons from black to white;
 }
 .top-nav {
   background-color: #379683;
