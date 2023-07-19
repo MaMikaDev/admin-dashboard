@@ -41,6 +41,17 @@
   padding: 0.3em;
 }
 
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar a:hover {
+  color: #5cdb95;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 [class^="icon"] {
   width: 1.8em;
   height: 1.8em;
@@ -48,8 +59,8 @@
   top: 0.39em;
   color: white;
   -webkit-filter: invert(100%);
-  #changes the colour of icons from black to white;
 }
+
 .top-nav {
   background-color: #379683;
   grid-area: top-nav;
@@ -59,15 +70,28 @@
 
 .logged-in p,
 .three-buttons p {
-  margin-left: 15rem;
+  width: max-content;
+  float: right;
+  margin-right: 5%;
+}
+
+.hello p,
+.search-bar p {
+  margin-left: 1%;
 }
 
 .button {
-  border-radius: 2em;
+  border-radius: 0.7em;
   padding: 0.6em;
-  font: 2em;
+  font-size: minmax(2em, 3em);
+  font-weight: bold;
   background-color: #05386b;
   color: white;
+}
+
+.button:hover {
+  color: #5cdb95;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .top-nav > div {
@@ -91,7 +115,9 @@
   display: grid;
   gap: 0.3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(11, 1fr);
+  /* grid-template-rows: repeat(11, 1fr); */
+  grid-template-rows: auto-fit;
+  padding: 1%;
 }
 
 .projects {
@@ -99,9 +125,21 @@
 }
 
 .element {
+  display: grid;
   border-radius: 0.5em;
   padding: 1%;
   background-color: #8ee4af;
+  overflow: hidden;
+  font-size: 0.7em;
+}
+
+.element > p:first-child {
+  font-weight: bold;
+}
+
+.post-options {
+  padding: 2%;
+  place-self: end;
 }
 
 .projects {
