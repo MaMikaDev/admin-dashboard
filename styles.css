@@ -68,6 +68,9 @@
   margin: 0;
 }
 
+.spy-glass {
+  margin-right: 1rem;
+}
 .sidebar a {
   text-decoration: none;
   color: white;
