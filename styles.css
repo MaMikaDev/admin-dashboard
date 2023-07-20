@@ -36,6 +36,9 @@ p {
   padding: 1%;
 }
 
+.container a:visited {
+  color: #05386b;
+}
 .sidebar {
   display: grid;
   background-color: #05386b;
@@ -95,6 +98,11 @@ p {
   align-items: start;
 }
 
+.three-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: baseline;
+}
 .logged-in p,
 .three-buttons p {
   width: max-content;
@@ -126,6 +134,7 @@ p {
   grid-template-columns: min-content 1fr;
   place-items: center;
   padding: 2rem;
+  padding-left: 0.4rem;
 }
 
 .top-nav > .search-bar > .icon {
