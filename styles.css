@@ -27,7 +27,7 @@ p {
     "sidebar main main main main"
     "sidebar main main main main"
     "sidebar main main main main";
-  max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -282,4 +282,76 @@ p {
 .item-7 > p::first-line {
   font-size: larger;
   font-weight: bold;
+}
+
+@media screen and (max-width: 730px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "top-nav"
+      "main"
+      "sidebar";
+    overflow: auto;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .top-nav {
+    background-color: #379683;
+    grid-area: top-nav;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hello"
+      "search-bar"
+      "buttons"
+      "logged-in";
+    padding: 1%;
+  }
+
+  .search-bar {
+    grid-area: search-bar;
+  }
+
+  .three-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: buttons;
+  }
+
+  .logged-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: center;
+    grid-area: logged-in;
+  }
+
+  .hello {
+    display: grid;
+    grid-area: hello;
+    width: 40%;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: unset;
+  }
+  .main-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 300px;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2vh;
+  }
 }
