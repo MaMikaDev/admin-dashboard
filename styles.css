@@ -47,7 +47,7 @@ p {
   grid-area: sidebar;
   color: white;
   grid-template-rows: inherit;
-  gap: 2vh;
+  gap: 7vh;
 }
 
 .sidebar > div {
@@ -97,7 +97,8 @@ p {
 .sidebar a:hover {
   color: #5cdb95;
   font-weight: bold;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .top-nav {
@@ -234,6 +235,10 @@ p {
 .main h4 {
   justify-self: center;
   font-family: "Press Start 2P", cursive;
+}
+
+.main a:hover {
+  margin: 5px;
 }
 
 .main-one {
