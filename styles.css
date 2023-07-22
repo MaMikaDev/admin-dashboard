@@ -27,7 +27,7 @@ p {
     "sidebar main main main main"
     "sidebar main main main main"
     "sidebar main main main main";
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
@@ -43,17 +43,21 @@ p {
 
 .sidebar {
   display: grid;
-  background-color: #05386b;
+  background-color: rgb(5, 56, 107);
   grid-area: sidebar;
   color: white;
-  align-items: start;
-  grid-template-columns: max-content;
+  grid-template-rows: inherit;
+  gap: 2vh;
 }
 
 .sidebar > div {
   margin-left: 1em;
   margin-top: 0;
   padding-right: 1em;
+}
+
+.sidebar > .dashboard h2 {
+  font-weight: bolder;
 }
 
 .sidebar a:visited {
@@ -137,7 +141,7 @@ p {
 }
 
 .hello p:first-child {
-  font-stretch: condensed;
+  font-size: 15px;
 }
 
 .hello p:nth-child(2) {
@@ -163,15 +167,16 @@ p {
   border-radius: 1rem;
   padding: 0.5em;
   font-size: minmax(2em, 3em);
-  background-color: #05386b;
+  background-color: #5cdb95;
   color: white;
   margin: 0.6rem;
-  font-family: "Press Start 2P", cursive;
+  font-size: 18px;
 }
 
 .button:hover {
-  color: #5cdb95;
+  color: white;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
 }
 
 .top-nav > div {
