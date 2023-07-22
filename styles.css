@@ -95,13 +95,14 @@ p {
   grid-area: top-nav;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: start;
+  align-items: end;
 }
 
 .three-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-self: baseline;
+  justify-self: auto;
+  align-self: center;
 }
 .logged-in p,
 .three-buttons p {
@@ -149,6 +150,7 @@ p {
   font-weight: bold;
   background-color: #05386b;
   color: white;
+  margin: 0.6rem;
 }
 
 .button:hover {
