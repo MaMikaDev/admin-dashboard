@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 *::before,
 *::after {
@@ -39,6 +40,7 @@ p {
 .container a:visited {
   color: #05386b;
 }
+
 .sidebar {
   display: grid;
   background-color: #05386b;
@@ -52,6 +54,10 @@ p {
   margin-left: 1em;
   margin-top: 0;
   padding-right: 1em;
+}
+
+.sidebar a:visited {
+  color: white;
 }
 
 [class^="icon"] {
@@ -130,6 +136,16 @@ p {
   margin: 0;
 }
 
+.hello p:first-child {
+  font-stretch: condensed;
+}
+
+.hello p:nth-child(2) {
+  font-size: larger;
+  font-family: "Press Start 2P", cursive;
+  font-weight: bolder;
+}
+
 .top-nav > .search-bar {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -144,13 +160,13 @@ p {
 }
 
 .button {
-  border-radius: 0.7em;
-  padding: 0.6em;
+  border-radius: 1rem;
+  padding: 0.5em;
   font-size: minmax(2em, 3em);
-  font-weight: bold;
   background-color: #05386b;
   color: white;
   margin: 0.6rem;
+  font-family: "Press Start 2P", cursive;
 }
 
 .button:hover {
@@ -183,6 +199,8 @@ p {
   grid-template-columns: 1fr auto auto;
   justify-items: end;
   align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: smaller;
 }
 
 .user-avatar-small {
@@ -206,6 +224,11 @@ p {
 
 .main::-webkit-scrollbar {
   display: none;
+}
+
+.main h4 {
+  justify-self: center;
+  font-family: "Press Start 2P", cursive;
 }
 
 .main-one {
